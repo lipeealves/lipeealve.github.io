@@ -1,0 +1,146 @@
+main {
+    box-sizing: border-box;
+    padding: 0 5%;
+    background-image: url(../img/home-background.png);
+    background-size: cover;
+}
+
+.conteiner_cursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.cursos_chamada{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.0;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.chamada_titulo {
+    color: #e93d50;
+    font-weight: 800;
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+
+.chamada_titulo-destaque {
+    color: #fff;
+}
+
+.chamada_texto-destaque {
+    font-weight: 800;
+}
+
+.chamada {
+    font-weight: 500;
+    margin-top: 5px;
+    font-size: 22px;
+}
+
+.curso_lista {
+    margin-bottom: 40px;
+}
+
+.curso_lista-item {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #4286f4;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.curso_lista-item:hover {
+    transform: translate(0, -5px);
+    background-color: rgba(66, 134, 244, 0.337);
+    transition: 0.25s;
+}
+
+.curso_lista-item img {
+    box-sizing: border-box;
+    width: 84px;
+    height: 84px;
+    padding: 10px;
+}
+
+.cursos-descricao {
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+@media (min-width: 1600px) {
+    .curso_lista {
+        width: 1450px;
+    }
+    
+    .curso_lista-item{
+        width: 220px;
+        height: 180px;
+    }
+
+    .curso_lista-item img {
+        width: 110px;
+        height: 110px;
+        padding: 10px;
+    }
+
+    .cursos-descricao {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1480px) and (max-width: 1599px){
+    .curso_lista {
+        width: 90%;
+    }
+
+    .curso_lista-item {
+        width: 200px;
+        height: 160px;
+    }
+}
+
+@media (min-width: 1080px) and (max-width: 1240) {
+    .curso_lista-item {
+        width: 170px;
+        height: 140px;
+    }
+
+    .curso_lista-item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cursos-descricao {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1079px) {
+    .curso_lista-item {
+        width: 150px;
+        height: 120px;
+    }
+
+    .curso_lista-item img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .cursos-descricao {
+        font-size: 14px;
+    }
+}
